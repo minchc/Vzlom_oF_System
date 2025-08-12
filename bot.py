@@ -1,14 +1,15 @@
 from aiogram import Bot, Dispatcher, types, F
+from aiogram.filters import Command
 import asyncio
 
 TOKEN = "8343837798:AAFSRbHFKLGjA6l9mlQB9Nk1-62WfKmAToE"
-GAME_SHORT_NAME = "vzlom_of_system"  # точно такой же, как в BotFather
-GAME_URL = "https://minchc.github.io/Vzlom_oF_System/"  # твоя ссылка на игру
+GAME_SHORT_NAME = "vzlom_of_system"  # тот же, что в BotFather
+GAME_URL = "https://minchc.github.io/Vzlom_oF_System/"  # ссылка на игру
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-@dp.message(commands=["start"])
+@dp.message(Command("start"))
 async def start_game(message: types.Message):
     await message.answer_game(GAME_SHORT_NAME)
 
