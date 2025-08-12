@@ -2,7 +2,7 @@ from aiogram import Bot, Dispatcher, types
 import asyncio
 
 TOKEN = "8343837798:AAFSRbHFKLGjA6l9mlQB9Nk1-62WfKmAToE"
-GAME_SHORT_NAME = "vzlom"  # тот самый, что указывали в BotFather
+GAME_SHORT_NAME = "vzlom_of_system"  # тот самый, что указывали в BotFather
 GAME_URL = "https://minchc.github.io/Vzlom_oF_System/"  # ссылка на GitHub Pages
 
 bot = Bot(token=TOKEN)
